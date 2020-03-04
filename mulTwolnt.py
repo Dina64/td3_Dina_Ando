@@ -1,8 +1,8 @@
-def mul(x,y):
-	return( x * y)
-x = int(input("Entre une valeur: "))
-y = int(input("Entre une autre valeur: "))
-print("voila la multiplication de votre valeur")
+import sys
 
-if __name__ == "__main__":
-	print(mul(x,y))
+print(sys.argv)
+
+x = int(sys.argv[1])
+y = int(sys.argv[2])
+
+print(x*y)
