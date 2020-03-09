@@ -8,9 +8,14 @@ if __name__ == "__main__":
 		x = int( sys.argv[1] )
 		y = int( sys.argv[2] )
 		print((x)," + ",(y)," = ",(x+y))
-	else: 
+	elif len(sys.argv)==2: 
 		print("Trop peu d'argument")
 		print("Entrer la deuxième valeur: ")
 		x = int( sys.argv[1] )
+		y = int(input())
+		print((x)," + ",(y)," = ",(x+y))
+	else:
+		print("Ajouter deux arguments: ")
+		x = int(input())
 		y = int(input())
 		print((x)," + ",(y)," = ",(x+y))
