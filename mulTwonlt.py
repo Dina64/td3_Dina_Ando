@@ -1,8 +1,13 @@
 #!/usr/bin/env python
 import sys
-print(sys.argv)
+if __name__ == "__main__":
 
-x = int(sys.argv[1])
-y = int(sys.argv[2])
+	if len(sys.argv) > 3:
+		print("saisissez que deux argument")
+	elif len(sys.argv) == 3:
+		x = int(sys.argv[1])
+		y = int(sys.argv[2])
+		print(("x * y = ")(x*y))
+	else:
+		print("peu d'argument")
 
-print(("y * x = "),(y*x))
