@@ -10,3 +10,7 @@ if __name__ == "__main__":
 		print((x)," + ",(y)," = ",(x+y))
 	else: 
 		print("Trop peu d'argument")
+		print("Entrer la deuxième valeur: ")
+		x = int( sys.argv[1] )
+		y = int(input())
+		print((x)," + ",(y)," = ",(x+y))
