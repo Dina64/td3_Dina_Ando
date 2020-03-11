@@ -3,8 +3,8 @@
 import sys
 
 if __name__ == "__main__":
-	rep = str(input("voulez vous additionner deux rentier?Tapez y pour yes et n pour non: "))
-	if (rep =='y'):
+	dem = str(input("voulez vouz multiplier ou additionner? tapez m pour multiplier ou a pour additionner: ")) 
+	if (dem =='a'):
 		if len(sys.argv)>3:
 			print("Veillez inserer que deux arguments")
 		elif len(sys.argv)==3:
@@ -22,5 +22,22 @@ if __name__ == "__main__":
 			x = int(input())
 			y = int(input())
 			print((x)," + ",(y)," = ",(x+y))
+	elif(dem == 'm'):
+		if len(sys.argv) > 3:
+			print("saisissez que deux argument")
+		elif len(sys.argv) == 3:
+			x = int(sys.argv[1])
+			y = int(sys.argv[2])
+			print(("x * y = "),(x*y))
+		elif len(sys.argv)==2:
+			print("peu d'argument")
+			x = int(sys.argv[1])
+			y = int(input("inserez le 2eme valeur: "))
+			print((x), "*",(y) ,"= ",(x*y))
+		else:
+			print("ajouter des valeur")
+			x  = int(input("ajoutez 1er valeur: "))
+			y  = int(input("ajoutez la 2eme valeur: "))
+			print((x),"*",(y),"=",(x*y))
 	else:
-		print("Merci,Au revoir")
+		print("pena programmation")
